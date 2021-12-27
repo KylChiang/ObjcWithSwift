@@ -18,5 +18,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)tappedObjcButton:(id)sender {
+    
+}
+
+- (IBAction)tappedSwiftButton:(id)sender {
+    
+}
+
 
 @end
