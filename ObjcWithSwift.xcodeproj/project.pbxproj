@@ -17,6 +17,7 @@
 		6102B15B277A01C30055D78B /* ObjcWithSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B15A277A01C30055D78B /* ObjcWithSwiftTests.m */; };
 		6102B165277A01C30055D78B /* ObjcWithSwiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B164277A01C30055D78B /* ObjcWithSwiftUITests.m */; };
 		6102B167277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B166277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m */; };
+		6102B175277A08440055D78B /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6102B174277A08440055D78B /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6102B160277A01C30055D78B /* ObjcWithSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcWithSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6102B164277A01C30055D78B /* ObjcWithSwiftUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcWithSwiftUITests.m; sourceTree = "<group>"; };
 		6102B166277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcWithSwiftUITestsLaunchTests.m; sourceTree = "<group>"; };
+		6102B173277A08440055D78B /* ObjcWithSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcWithSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6102B174277A08440055D78B /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +113,13 @@
 				6102B142277A01C20055D78B /* SceneDelegate.m */,
 				6102B144277A01C20055D78B /* ViewController.h */,
 				6102B145277A01C20055D78B /* ViewController.m */,
+				6102B174277A08440055D78B /* SwiftViewController.swift */,
 				6102B147277A01C20055D78B /* Main.storyboard */,
 				6102B14A277A01C30055D78B /* Assets.xcassets */,
 				6102B14C277A01C30055D78B /* LaunchScreen.storyboard */,
 				6102B14F277A01C30055D78B /* Info.plist */,
 				6102B150277A01C30055D78B /* main.m */,
+				6102B173277A08440055D78B /* ObjcWithSwift-Bridging-Header.h */,
 			);
 			path = ObjcWithSwift;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				TargetAttributes = {
 					6102B13A277A01C20055D78B = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					6102B155277A01C30055D78B = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -269,6 +275,7 @@
 				6102B146277A01C20055D78B /* ViewController.m in Sources */,
 				6102B140277A01C20055D78B /* AppDelegate.m in Sources */,
 				6102B151277A01C30055D78B /* main.m in Sources */,
+				6102B175277A08440055D78B /* SwiftViewController.swift in Sources */,
 				6102B143277A01C20055D78B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,6 +467,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyl.ObjcWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcWithSwift/ObjcWithSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -468,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,6 +497,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyl.ObjcWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcWithSwift/ObjcWithSwift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -492,6 +506,7 @@
 		6102B16E277A01C30055D78B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +524,7 @@
 		6102B16F277A01C30055D78B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -526,6 +542,7 @@
 		6102B171277A01C30055D78B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -541,6 +558,7 @@
 		6102B172277A01C30055D78B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
