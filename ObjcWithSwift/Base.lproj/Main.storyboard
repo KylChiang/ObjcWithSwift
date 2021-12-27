@@ -40,6 +40,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedSwiftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WzI-vL-G8K"/>
+                                    <segue destination="4UX-Lr-JMn" kind="show" id="Eog-ay-lv5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +57,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+        <!--Swift View Controller-->
+        <scene sceneID="kvy-IU-rnV">
+            <objects>
+                <viewController storyboardIdentifier="SwiftViewController" id="4UX-Lr-JMn" customClass="SwiftViewController" customModule="ObjcWithSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rMe-CR-9OU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReN-JV-Hmm">
+                                <rect key="frame" x="152" y="722.5" width="110" height="53"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="leave">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedLeaveButton:" destination="4UX-Lr-JMn" eventType="touchUpInside" id="Z4f-H1-UQ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tLM-ge-YOh"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="ReN-JV-Hmm" firstAttribute="centerX" secondItem="rMe-CR-9OU" secondAttribute="centerX" id="7gC-SJ-qIv"/>
+                            <constraint firstItem="ReN-JV-Hmm" firstAttribute="centerY" secondItem="rMe-CR-9OU" secondAttribute="centerY" constant="328" id="XDv-Xw-PmM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Rf-9D-Xbx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ij-nl-ghF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="55"/>
         </scene>
     </scenes>
     <resources>
