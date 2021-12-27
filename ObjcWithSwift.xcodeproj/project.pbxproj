@@ -18,6 +18,7 @@
 		6102B165277A01C30055D78B /* ObjcWithSwiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B164277A01C30055D78B /* ObjcWithSwiftUITests.m */; };
 		6102B167277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B166277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m */; };
 		6102B175277A08440055D78B /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6102B174277A08440055D78B /* SwiftViewController.swift */; };
+		6102B178277A0E950055D78B /* MainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6102B177277A0E950055D78B /* MainHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		6102B166277A01C30055D78B /* ObjcWithSwiftUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcWithSwiftUITestsLaunchTests.m; sourceTree = "<group>"; };
 		6102B173277A08440055D78B /* ObjcWithSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcWithSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		6102B174277A08440055D78B /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		6102B176277A0E950055D78B /* MainHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainHelper.h; sourceTree = "<group>"; };
+		6102B177277A0E950055D78B /* MainHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				6102B142277A01C20055D78B /* SceneDelegate.m */,
 				6102B144277A01C20055D78B /* ViewController.h */,
 				6102B145277A01C20055D78B /* ViewController.m */,
+				6102B176277A0E950055D78B /* MainHelper.h */,
+				6102B177277A0E950055D78B /* MainHelper.m */,
 				6102B174277A08440055D78B /* SwiftViewController.swift */,
 				6102B147277A01C20055D78B /* Main.storyboard */,
 				6102B14A277A01C30055D78B /* Assets.xcassets */,
@@ -276,6 +281,7 @@
 				6102B140277A01C20055D78B /* AppDelegate.m in Sources */,
 				6102B151277A01C30055D78B /* main.m in Sources */,
 				6102B175277A08440055D78B /* SwiftViewController.swift in Sources */,
+				6102B178277A0E950055D78B /* MainHelper.m in Sources */,
 				6102B143277A01C20055D78B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,9 +6,10 @@
 //
 
 #import "ViewController.h"
+#import "MainHelper.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) UIAlertController *alertController;
+@property (nonatomic, strong) MainHelper *helper;
 
 @end
 
@@ -17,22 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-}
-
-- (void)objcFunction {
-    _alertController = [[UIAlertController alloc]initWithNibName:nil bundle:nil];
-    _alertController = [UIAlertController alertControllerWithTitle:@"This is Objc" message:@"its function" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    
-    [_alertController addAction:action];
-    
-    [self presentViewController:_alertController animated:YES completion:nil];
+    _helper = [MainHelper new];
 }
 
 - (IBAction)tappedObjcButton:(id)sender {
-    [self objcFunction];
+    [self.helper objcFunction:self];
 }
 
 - (IBAction)tappedSwiftButton:(id)sender {
